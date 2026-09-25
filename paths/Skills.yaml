@@ -1,0 +1,79 @@
+get:
+ tags: 
+ - Skills
+ summary: greturns List of my skills
+ operationId: "ListSkills"
+ security:
+    - OAuth2:
+        - Skills:read
+ responses: 
+   "200":
+    description: "OK"
+    content: 
+     application/jsonl:
+      schema:
+       $ref: ../components/schemas/SkillsList.yaml
+   "400":
+    description: "Bad Request"
+   "401":
+    description: "Unathorized"
+
+put:
+ security:
+  - OAuth2:
+     - skills:edit
+ summary: add a new skill.
+ operationId: "editSkill"
+
+ requestBody:
+  content:
+   application/jsonl:
+    schema:
+     $ref: ../components/schemas/Skill.yaml
+ responses:
+    "200":
+     description: "OK"
+    "400":
+     description: "Bad Request"
+    "401":
+     description: "Unathorized"
+
+post:
+ security:
+  - OAuth2:
+     - skills:edit
+ summary: add a new skill.
+ operationId: "addSkill"
+ requestBody:
+  content:
+   application/jsonl:
+    schema:
+     $ref: ../components/schemas/Skill.yaml
+ responses:
+    "200":
+     description: "OK"
+    "400":
+     description: "Bad Request"
+    "401":
+     description: "Unathorized"
+delete:    
+ security:
+  - OAuth2:
+     - skills:edit
+ operationId: "deleteSkill"
+ summary: delete skill with provided id.
+ requestBody:
+  content:
+   application/jsonl:
+    schema:
+     $ref: ../components/schemas/SkillId.yaml
+ responses:
+    "200":
+     description: "OK"
+    "400":
+     description: "Bad Request"
+    "401":
+     description: "Unathorized"
+
+ 
+

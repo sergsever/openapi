@@ -1,0 +1,20 @@
+{
+  "name": "homeapi",
+  "version": "1.0.0",
+  "description": "openapi description of home project",
+  "keywords": [
+    "openapi"
+  ],
+  "license": "ISC",
+  "author": "Lvov",
+  "type": "commonjs",
+  "main": "not",
+ "dependencies": {
+    "@redocly/cli": "latest"
+  },
+  "private": true,
+  "scripts": {
+    "start": "redocly preview --product redoc",
+    "test": "redocly lint "
+  }
+}

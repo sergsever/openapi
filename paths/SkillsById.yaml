@@ -1,0 +1,26 @@
+get:
+  parameters:
+   - name: "id"
+     in: path
+     schema:
+      type: integer
+  operationId: "SkillById"
+  summary: retuns a skill object by provided id.
+  description: method returns an object with skills
+  security:
+    - OAuth2:
+        - Skills:read
+  responses: 
+   "200":
+    description: success
+    content: 
+     application/jsonl:
+      schema:
+       $ref: ../components/schemas/SkillsList.yaml
+   "400":
+    description: "Bad Request"
+   "401":
+    description: "Unathorized"
+    
+  
+ 
