@@ -1,0 +1,15 @@
+ type: object
+ title: Skill
+ properties:
+  id:
+   description: skill   id
+   type: integer
+  name:
+   description: title of a skill
+   type: string
+  description:
+   description: a description of a skill
+   type: string
+  expirience:
+   description: expirience in years
+   type: integer

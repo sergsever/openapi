@@ -1,0 +1,6 @@
+type: object
+title: "SkillId"
+properties:
+  id:
+   description: skill   id
+   type: integer
