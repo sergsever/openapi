@@ -9,12 +9,16 @@
   "author": "Lvov",
   "type": "commonjs",
   "main": "not",
- "dependencies": {
-    "@redocly/cli": "latest"
+  "dependencies": {
+    "@redocly/cli": "latest",
+    "cors": "^2.8.6",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0"
   },
   "private": true,
   "scripts": {
-    "start": "redocly preview --product redoc",
+    "start": "node swagger.js",
     "test": "redocly lint "
   }
 }
