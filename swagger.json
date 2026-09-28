@@ -1,0 +1,24 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Test Coordinadora - Docs",
+    "description": "Competición por cargo desarrollador backend, API en donde se resuelven distintos retos para demostrar capacidad lógica en node.js",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/challenge",
+  "tags": [
+    {
+      "name": "Test Coordinadora - Docs",
+      "description": "Competición por cargo desarrollador backend, API en donde se resuelven distintos retos para demostrar capacidad lógica en node.js"
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"]
+}
+
